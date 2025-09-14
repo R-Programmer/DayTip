@@ -1,6 +1,6 @@
+import streamlit as st
 import datetime
 import random
-import streamlit as st
 
 tips=['never say “ I can’t😒 “ always say “I’ll try😊”.',
          'don’t let your dreams ... \n be dreams💤.',
@@ -15,6 +15,7 @@ st.subheader(message)
 if st.button('Get another tip'):
     newMessage=random.choice(tips)
     st.subheader(newMessage)
+
 
 
 
