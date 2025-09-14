@@ -10,11 +10,12 @@ tips=['never say “ I can’t😒 “ always say “I’ll try😊”.',
 today= datetime.datetime.today().strftime('%d %m %Y')
 message=random.choice(tips)
 st.title('Tip of the day💡:')
-st.write('Date: {today}')
+st.write(f'Date: {today}')
 st.subheader(message)
 if st.button('Get another tip'):
     newMessage=random.choice(tips)
     st.subheader(newMessage)
+
 
 
 
